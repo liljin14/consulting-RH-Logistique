@@ -3,25 +3,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
     padding: 1em 0;
-    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 1em;
 }
 
 nav ul li a {
@@ -29,35 +37,57 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2, h3 {
-    color: #4CAF50;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #4CAF50;
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
     color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
 }
 
 .cta {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    padding: 0.5em 1em;
+    background-color: #28a745;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 1em;
+}
+
+.services, .about {
+    padding: 2em 0;
+}
+
+.services .container, .about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.services h2, .about h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.service-item {
+    background: #f4f4f4;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
 }
